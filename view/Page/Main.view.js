@@ -20,13 +20,13 @@ sap.ui.jsview("view.Page.Main", {
 				],
 				contentMiddle: [
 					new sap.m.Label({
-						text: "{il8n>PAGE1}"
+						text: "{i18n>PAGE1}"
 					})
 				]
 			},
 			content: [
 				new sap.m.Label({
-					text: "Hello world"
+					text: "{i18n>HELLO_WORLD}"
 				})
 			]
 		});

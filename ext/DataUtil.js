@@ -18,6 +18,35 @@ var Util = {
 			dataType: "json",
 			async: true
 		});
+	},
+
+	loadStart: function (title, text) {
+
+		if (!title)
+			title = "Chargement";
+
+		if (!text)
+			text = "Chargement en cours";
+
+		var busyDialog = sap.ui.getCore().byId("BusyDialog");
+
+		if (!busyDialog) {
+			busyDialog = new sap.m.BusyDialog('BusyDialog', {
+				text: title,
+				title: text
+			});
+		}
+
+		busyDialog.open();
+	},
+
+
+	loadEnd: function () {
+		var busyDialog = sap.ui.getCore().byId("BusyDialog");
+
+		if (busyDialog) {
+			busyDialog.close();
+		}
 	}
 
 }
