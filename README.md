@@ -7,5 +7,5 @@ Template pour application SAPUI5 :
 - Une classe Util, avec une méthode getData pour effectuer une requête AJAX
 - Une classe Formatter utilisée pour formatter des textes
 - Un fichier Config.js, contenant les url accessible. Une variable localMode permet d'utiliser l'application sur un poste en local
-- Deux fichiers pour les langues, chargé lors du lancement de l'application
+- Deux fichiers pour les langues, chargés lors du lancement de l'application
 
