@@ -1,6 +1,8 @@
 var Util = {
 
-
+	/*
+	 *	Récupere les données JSON
+	 */
 	getData: function (dataName, param) {
 
 		var url;
@@ -20,6 +22,9 @@ var Util = {
 		});
 	},
 
+	/*
+	 *	Ouverture de la boîte de chargement
+	 */
 	loadStart: function (title, text) {
 
 		if (!title)
@@ -41,6 +46,9 @@ var Util = {
 	},
 
 
+	/*
+	 *	Fermeture de la boîte de chargement
+	 */
 	loadEnd: function () {
 		var busyDialog = sap.ui.getCore().byId("BusyDialog");
 
