@@ -11,7 +11,7 @@ sap.ui.jsview("view.Page.Main", {
 	createContent: function (ctrl) {
 
 		this.page = new sap.m.Page("Page.PageTemplate", {
-			customHeader: {
+			customHeader: new sap.m.Bar({
 				contentLeft: [
 					new sap.m.Button({
 						icon: "sap-icon://navigation-left-arrow",
@@ -23,7 +23,7 @@ sap.ui.jsview("view.Page.Main", {
 						text: "{i18n>PAGE1}"
 					})
 				]
-			},
+			}),
 			content: [
 				new sap.m.Label({
 					text: "{i18n>HELLO_WORLD}"
